@@ -80,39 +80,87 @@ nav a {
     font-weight: 700;
 }
 
-.banner-content > p{
+.banner-content>p {
     margin-bottom: 50px;
 }
 
-.banner-section> img{
+.banner-section>img {
     display: flex;
     margin: 0 auto;
     width: 90%;
 }
 
+/* main tag styles */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* features section styles */
+
+.features-container {
+    display: flex;
+    align-items: center;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.features-description {
+    padding: 0 70px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+#Quick-List {
+    color: #727272;
+    font-weight: 500;
+
+}
+
+#of-ur {
+    color: #131313;
+    font-weight: 700;
+}
+
+#features {
+    color: #FF900E;
+    font-weight: 700;
+}
 
 /* Responsive styles for small devices */
+/* MOBILE */
 
 @media screen and (max-width: 576px) {
 
-    nav{
+    nav {
         flex-direction: column;
         padding: 10px;
     }
-    .description{
+
+    .description {
         margin: 5px;
     }
 }
 
 /* Rexponsive styles for medium devices */
+/* TABLET,IPAD etc. */
 
 @media screen and (min-width:576.1px) and (max-width:960px) {
-    nav{
+    nav {
         flex-direction: column;
         padding: 10px;
     }
-    .description{
+
+    .description {
         margin: 5px;
     }
-    
+
 }
