@@ -94,7 +94,7 @@ nav a {
 
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* features section styles */
@@ -112,6 +112,9 @@ main {
 
 .features-description {
     padding: 0 70px;
+}
+.features-description>p{
+    margin-bottom: 30px;
 }
 
 .feature-title {
@@ -140,21 +143,30 @@ main {
 
 @media screen and (max-width: 576px) {
 
-    nav {
+    nav, .features-container {
         flex-direction: column;
         padding: 10px;
     }
-
+    .images-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
     .description {
         margin: 5px;
     }
+    .features-description {
+        padding: 0 20px;
+    }
+    .features-description>p{
+        margin-bottom: 30px;
+    }
+    
 }
 
 /* Rexponsive styles for medium devices */
 /* TABLET,IPAD etc. */
 
 @media screen and (min-width:576.1px) and (max-width:960px) {
-    nav {
+    nav, .features-container {
         flex-direction: column;
         padding: 10px;
     }
@@ -162,5 +174,14 @@ main {
     .description {
         margin: 5px;
     }
-
+    .images-grid{
+        grid-template-columns: 1fr;
+    }
+    .features-description {
+        padding: 0 20px;
+    }
+    .features-description>p{
+        margin-bottom: 30px;
+    }
+    
 }
